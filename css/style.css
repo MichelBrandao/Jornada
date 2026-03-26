@@ -1,28 +1,35 @@
 /* VAR */
-:root{
-    --bg-pri-color: #fff;
-    --bg-sec-color: #f5f5f5;
-    --bg-ter-color: #000;
+:root {
+  /* BACKGROUND COLOR */
+  --bg_color_1: #fff;
+  --bg_color_2: #f5f5f5;
+  --bg_color_3: #000;
 
-    --btn-pri-color: #8f0101; 
-    --btn-sec-color: #b81515;
+  /* BUTTON COLOR */
+  --btn_color_1: #8f0101;
+  --btn_color_2: #b81515;
 
-    --txt-pri-color: #222;
-    --txt-sec-color: #fff;
+  /* TEXT COLOR */
+  --txt-color_1: #222;
+  --txt-color_2: #fff;
+
+  /* TEXT WEIGHT */
+  --txt_weight_title: 700;
+  --txt_weight_content: 400;
+  --txt_weight_menu: 500;
 }
 
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* FONTS */
 @font-face {
-    font-family: "Monterrat";
-    src: url(font/Montserrat-VariableFont_wght.ttf);
-    font-style: normal;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url(font/Montserrat-VariableFont_wght.ttf);
+  font-style: normal;
+  font-display: swap;
 }
-
