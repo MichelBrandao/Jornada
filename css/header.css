@@ -14,6 +14,14 @@ header {
   height: 64px;
 }
 
+.logo-mobile {
+  display: block;
+}
+
+.logo-desktop {
+  display: none;
+}
+
 .nav-menu {
   margin-top: 24px;
 }
@@ -51,7 +59,7 @@ nav {
   display: none;
 }
 
-/* TELAS */
+/* TELA: TABLET*/
 @media screen and (min-width: 768px) {
   .nav-menu {
     margin-top: 0;
@@ -72,7 +80,18 @@ nav {
     padding: 0;
   }
 
-  .nav-menu ul li{
+  .nav-menu ul li {
     margin: 0;
+  }
+}
+
+/* TELA: DESKTOP*/
+@media screen and (min-width: 1024px) {
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
   }
 }
