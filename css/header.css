@@ -2,6 +2,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
   background-color: var(--bg_color_3);
   padding: 38px 48px;
 }
@@ -17,10 +18,30 @@ header {
   margin-top: 24px;
 }
 
+.list-link {
+  list-style: none;
+}
+
+.list-link li {
+  margin: 16px 0;
+}
+
+.list-link li a {
+  color: var(--txt-color_2);
+}
 
 /*OUTROS*/
-input[type="checkbox"]:checked ~ nav{
-    display: block;
+body {
+  font-family: "Montserrat";
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  background-color: var(--bg_color_3);
+  width: 100%;
+  top: 100%;
+  left: 0;
 }
 
 nav {
