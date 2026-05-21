@@ -7,7 +7,7 @@ header {
   padding: 38px 48px;
 }
 
-/*CLASSES*/
+/* CLASSES */
 .logo {
   display: inline-block;
   width: 68px;
@@ -28,9 +28,12 @@ header {
 
 .list-link li a {
   color: var(--txt-color_2);
+  text-decoration: none;
+  font-weight: var(--txt_weight_content);
+  font-size: 24px;
 }
 
-/*OUTROS*/
+/* OUTROS */
 body {
   font-family: "Montserrat";
 }
@@ -46,4 +49,30 @@ input[type="checkbox"]:checked ~ nav {
 
 nav {
   display: none;
+}
+
+/* TELAS */
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    margin-top: 0;
+  }
+
+  .nav-menu label {
+    display: none;
+  }
+
+  .nav-menu nav {
+    display: block;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav-menu ul li{
+    margin: 0;
+  }
 }
