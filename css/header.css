@@ -1,0 +1,113 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  background-color: var(--bg_color_3);
+  padding: 38px 48px;
+}
+
+/* CLASSES */
+.logo {
+  display: inline-block;
+  width: 68px;
+  height: 64px;
+}
+
+.logo-mobile {
+  display: block;
+}
+
+.logo-desktop {
+  display: none;
+}
+
+.nav-menu {
+  margin-top: 24px;
+}
+
+.list-link {
+  list-style: none;
+}
+
+.list-link li {
+  margin: 16px 0;
+}
+
+.list-link li a {
+  color: var(--txt-color_2);
+  text-decoration: none;
+  font-weight: var(--txt_weight_content);
+  font-size: 24px;
+}
+
+/* OUTROS */
+body {
+  font-family: "Montserrat";
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  background-color: var(--bg_color_3);
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
+
+nav {
+  display: none;
+}
+
+/* TELA: TABLET*/
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    margin-top: 0;
+    width: 467px;
+    padding-top: 12px;
+  }
+
+  .nav-menu label {
+    display: none;
+  }
+
+  .nav-menu nav {
+    display: block;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    margin: 0;
+  }
+}
+
+/* TELA: DESKTOP*/
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 38px 120px;
+  }
+  .nav-menu {
+    padding-top: 16px;
+  }
+  .nav-menu a:hover {
+    color: var(--btn_color_1);
+  }
+  .logo {
+    width: 260px;
+    height: 64px;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
+  }
+}
