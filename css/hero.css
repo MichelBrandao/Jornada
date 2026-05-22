@@ -1,0 +1,44 @@
+/* TELA: MOBILE*/
+.hero-img {
+  height: 400px;
+  width: 100%;
+  background: url(../img/banner_mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.hero h2 {
+  padding: 88px 24px;
+  margin: 0px;
+  font-weight: var(--txt_weight_content);
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* TELA: TABLET*/
+@media screen and (min-width: 768px) {
+  .hero-img {
+    height: 620px;
+    width: 100%;
+    background: url(../img/banner_tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .hero h2 {
+    padding: 88px 60px;
+    font-size: 32px;
+  }
+}
+
+/* TELA: DESKTOP*/
+@media screen and (min-width: 1024px) {
+  .hero-img {
+    height: 620px;
+    width: 100%;
+    background: url(../img/banner_desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+  .hero h2 {
+    padding: 88px 120px;
+  }
+}
