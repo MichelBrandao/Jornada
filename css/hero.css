@@ -1,0 +1,27 @@
+/* TELA: MOBILE*/
+.hero-img {
+    height: 400px;
+    width: 100%;
+    background: url(../img/banner_mobile.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* TELA: TABLET*/
+@media screen and (min-width: 768px) {
+.hero-img {
+    height: 620px;
+    width: 100%;
+    background: url(../img/banner_tablet.jpg) no-repeat;
+    background-size: cover;
+}
+}
+
+/* TELA: DESKTOP*/
+@media screen and (min-width: 1024px) {
+.hero-img {
+    height: 620px;
+    width: 100%;
+    background: url(../img/banner_desktop.jpg) no-repeat;
+    background-size: cover;
+}
+}
