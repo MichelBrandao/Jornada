@@ -1,3 +1,10 @@
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
 .card {
   color: var(--txt-color_2);
   background-color: black;
@@ -32,6 +39,15 @@
   font-size: 32px;
   margin-top: 24px;
   display: inline-block;
+}
+
+/* TELA: TABLET*/
+@media screen and (min-width: 768px) {
+  .offers-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /* TELA: DESKTOP*/
