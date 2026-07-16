@@ -5,7 +5,7 @@
   gap: 24px;
 }
 
-.card {
+.offers-cards .card {
   color: var(--txt-color_2);
   background-color: black;
   padding: 24px 16px;
@@ -17,7 +17,7 @@
   background-size: cover;
 }
 
-.card header {
+.offers-cards .card header {
   display: block;
   background-color: transparent;
   position: static;
@@ -25,18 +25,18 @@
   margin-bottom: 24px;
 }
 
-.card header p {
+.offers-cards .card header p {
   font-size: 20px;
   font-weight: var(--txt_weight_content);
 }
 
-.card header h3 {
+.offers-cards .card header h3 {
   font-size: 40px;
   font-weight: var(--txt_weight_content);
   margin: 8px 0 0;
 }
 
-.card header span {
+.offers-cards .card header span {
   font-size: 32px;
   margin-top: 24px;
   display: inline-block;
