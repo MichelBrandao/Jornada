@@ -14,6 +14,7 @@
   box-sizing: border-box;
   border-radius: 16px;
   text-align: center;
+  background-size: cover;
 }
 
 .card header {
@@ -41,6 +42,19 @@
   display: inline-block;
 }
 
+.card.jp {
+  background: url(../img/bg_card_japao.jpg) no-repeat;
+}
+.card.sa {
+  background: url(../img/bg_card_san_andreas.jpg) no-repeat;
+}
+.card.pb {
+  background: url(../img/bg_card_paraiba.jpg) no-repeat;
+}
+.card.mn {
+  background: url(../img/bg_card_manaus.jpg) no-repeat;
+}
+
 /* TELA: TABLET*/
 @media screen and (min-width: 768px) {
   .offers-cards {
@@ -53,7 +67,7 @@
 /* TELA: DESKTOP*/
 @media screen and (min-width: 1024px) {
   .card {
-    width: 588px;
+    width: 420px;
     height: 308px;
   }
   .card header h3 {
@@ -62,5 +76,12 @@
 
   .card header span {
     font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .offers-cards {
+    width: 1250px;
+    margin: 0 auto;
   }
 }
