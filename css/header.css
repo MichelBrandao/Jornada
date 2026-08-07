@@ -1,114 +1,104 @@
-/* TELA: MOBILE*/
-header {
+.main-header {
+  background-color: var(--background-tertiary-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
-  background-color: var(--bg_color_3);
+  align-items: flex-start;
   padding: 38px 48px;
+  position: relative;
 }
 
-/* CLASSES */
 .logo {
   display: inline-block;
   width: 68px;
   height: 64px;
 }
 
-.logo-mobile {
+.img-mobile {
   display: block;
 }
 
-.logo-desktop {
+.img-desktop {
   display: none;
 }
-
-.nav-menu {
+.navigation-menu {
   margin-top: 24px;
-}
-
-.list-link {
-  list-style: none;
-}
-
-.list-link li {
-  margin: 16px 0;
-}
-
-.list-link li a {
-  color: var(--txt-color_2);
-  text-decoration: none;
-  font-weight: var(--txt_weight_content);
-  font-size: 24px;
-}
-
-/* OUTROS */
-body {
-  font-family: "Montserrat";
 }
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
   position: absolute;
-  background-color: var(--bg_color_3);
-  width: 100%;
   top: 100%;
   left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
 }
 
 nav {
   display: none;
 }
 
-/* TELA: TABLET*/
+.list-links {
+  list-style: none;
+}
+
+.list-links li {
+  margin: 16px 0;
+}
+.list-links li a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+.list-links li a.active {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
-  .nav-menu {
+  .navigation-menu {
     margin-top: 0;
     width: 467px;
-    padding-top: 12px;
   }
-
-  .nav-menu label {
+  .navigation-menu label {
     display: none;
   }
 
-  .nav-menu nav {
+  .navigation-menu nav {
     display: block;
   }
-
-  .nav-menu ul {
+  .navigation-menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
   }
-
-  .nav-menu li {
+  .navigation-menu li {
     margin: 0;
   }
 }
 
-/* TELA: DESKTOP*/
 @media screen and (min-width: 1024px) {
-  header {
+  .main-header {
     padding: 38px 120px;
-  }
-  .nav-menu {
-    padding-top: 16px;
-  }
-  .nav-menu a:hover {
-    color: var(--btn_color_1);
   }
   .logo {
     width: 260px;
     height: 64px;
   }
-
-  .logo-mobile {
+  .img-desktop {
+    display: block;
+  }
+  .img-mobile {
     display: none;
   }
+  .navigation-menu a:hover {
+    color: var(--primary-color);
+  }
+}
 
-  .logo-desktop {
-    display: block;
+@media screen and (min-width: 1920px) {
+  .main-header {
+    padding: 38px 160px;
   }
 }
